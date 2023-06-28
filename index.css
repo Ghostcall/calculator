@@ -9,7 +9,7 @@ body{
     background-color: rgb(232, 229, 229);
 }
 .header{
-    background:linear-gradient(rgba(2, 6, 0, 0.7), rgba(0, 0, 0, 0.737)), url(images/U-I.png);
+    background:linear-gradient(rgba(2, 6, 0, 0.7), rgba(0, 0, 0, 0.737)), url(U-I.png);
     align-items: center;
     width: 100%;
     height: 90vh;
