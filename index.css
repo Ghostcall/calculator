@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,300;1,600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(232, 229, 229);
+}
+.header{
+    background:linear-gradient(rgba(2, 6, 0, 0.7), rgba(0, 0, 0, 0.737)), url(images/U-I.png);
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 8% 0px 8%;
+}
+span{
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 800;
+}
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(20, 43, 15);
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+.link{
+    display: flex;
+}
+.link li{
+    display: inline-block;
+    list-style: none;
+    padding:10px 25px;
+}
+.link li a{
+    color: rgb(199, 197, 197);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 15px;
+}
+.link li a::after{
+    content:"";
+    width: 0;
+    height:2px;
+    background: goldenrod;
+    display: block;
+    transition: .5s;
+}
+.link li a:hover::after{
+    width:100%;
+}
+.meet{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left:50%;
+    margin-top:0px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.meet h6{
+    color: rgb(199, 197, 197);
+    font-size: 20px;
+}
+.meet h1{
+    color: rgb(199, 197, 197);
+    font-size:50px;
+    width: 100%;
+    font-weight: bold;
+}
+.meet h1 span{
+    color: goldenrod;
+    font-size: 50px;
+}
+.meet p{
+    color:rgb(199, 197, 197);
+    font-size:25px;
+    font-weight: 400;
+}
+.start input:first-child{
+    margin-top: 10px;
+    display: inline-block;
+    width: 30%;
+    height: 7vh;
+    position:relative;
+    border-radius:10px;
+    resize:none;
+}
+.start input:last-child{
+    margin-top: 10px;
+    border-radius:10px;
+    height: 7vh;
+    width: 10%;
+    margin-left: 30px;
+    transition:all .5s ease 0s;
+    background:grey;
+    box-shadow: 15px 5px 10px #000, 8px 0px 14px #858585;
+}
+.start input:last-child:hover{
+    color: goldenrod;
+    background: rgb(20, 43, 15);
+    box-shadow: 10px 5px 3px #000, 4px 5px 20px goldenrod;
+}
+.about{
+    width: 80%;
+    padding: 5px 2px 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    max-height: 80vh;
+    margin: auto;
+}
+.about img{
+    width:40%;
+    border-radius: 50%;
+    height: 50vh;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.about-text{
+    margin-top:50px;
+    margin-left: 40px;
+}
+.about-text h1{
+    width: 50%;
+    color:goldenrod;
+    font-size: 40px;
+    border: 3px solid transparent;
+    text-shadow: 2px;
+    text-shadow: 2px 5px 0px #000, 3px 4px 12px;
+}
+.about-text h4{
+    font-size: 30px;
+    color: rgb(20, 43, 15);
+    text-shadow: 4px 0px 2px #000, 3px 4px 12px;
+}
+.about-text p{
+    color: rgba(32, 31, 31, 0.759);
+    text-shadow: 0px 1px 3px #000, 0px 5px 4px;
+    font-size:18px;
+    margin-bottom: 10px;
+}
+.cta{
+    background:rgba(32, 31, 31, 0.759);
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: goldenrod;
+    border-radius: 30px;
+    font-weight: bold;
+    padding:13px 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: .5s;
+}
+.cta:hover{
+    color: goldenrod;
+    background: rgb(20, 43, 15);
+    box-shadow:0px 1px 3px #000, 0px 5px 4px goldenrod;
+}
+.service h1{
+    width: 50%;
+    color:goldenrod;
+    font-size: 40px;
+    border: 3px solid transparent;
+    margin-left: 40%;
+    text-shadow: 2px 5px 0px #000, 3px 4px 12px;
+}
+.coll{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height:50vh;
+}
+.box{
+    background: gray;
+    padding: 10px 28px;
+    justify-content: space-between;
+    position: relative;
+    width:330px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.box:hover{
+    color: #858585;
+}
+.box h3{
+    text-align: center;
+    font-size: 30px;
+    color: goldenrod;
+    text-shadow: 4px 0px 2px #000, 3px 4px 12px;
+}
+.box h5{
+    color:white;
+    font-size: 17px;
+    text-align: center;
+    border: 3px solid transparent;
+    margin-bottom: 3%;
+    text-shadow: 2px;
+    text-shadow: 1px 0px 1px #000;
+}
+.ctaa{
+    background:goldenrod;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: rgb(20, 43, 15);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10px 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    transition: all .5s ease-in 0s;
+}
+.ctaa:hover{
+    color: goldenrod;
+    background: rgb(20, 43, 15);
+    box-shadow: 10px 5px 3px #000, 4px 5px 20px goldenrod;
+    font-size: 15px;
+}
+.contact-me{
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 30.5%;
+    height: 20vh;
+    max-height: 25vh;
+    width:40%;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 15px 5px 10px #000, 8px 0px 14px #858585;
+    background-color: rgb(206, 186, 131);
+    /* background:linear-gradient(rgba(0,0,0,0.4),rgba(1,9,0.5,0.2)),url(images/WhatsApp\ Image\ 2023-06-26\ at\ 5.23.29\ AM.jpeg);
+    */
+}
+.work{
+   text-align: center;
+   margin-top: 30px;
+   position: relative;
+}
+.work p{
+    font-size:20px;
+    font-weight: 500;
+    color: rgb(20, 43, 15);
+    text-shadow: 1px 0px 1px #000, 2px 1px 4px;
+}
+.ctb{
+    background: rgb(20, 43, 15);
+    font-size: 19px;
+    color:white;
+    border: 1px solid goldenrod;
+    border-radius:20px;
+    width: 30%;
+    height:7vh;
+    cursor:pointer;
+    transition:all .3s ease-in 0s;
+}
+.ctb:hover{
+    color: goldenrod;
+    background: rgb(20, 43, 15);
+    box-shadow: 0px 5px 3px #000, 0px 5px 2px goldenrod;
+    font-size: 25px;
+}
+.footer{
+    margin-top:40px;
+    width: 100%;
+    height:13vh;
+    border-radius: 15px;
+    background:gray;
+    box-shadow:0px 5px 3px #000, 0px 5px 2px gray;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+.talk{
+    /* margin-top:5px; */
+    text-indent: 5%;
+    font-size:14px;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+}
+.end{
+    text-align: center;
+    color: rgb(20, 43, 15);
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow:0px 1px 1px #000, 1px 0px 2px;
+}
+.social{
+    margin: auto;
+    font-size:40px;
+    font-weight:900;
+    padding:5px 12px 0px 3px;
+    cursor:pointer;
+}
+.social .fb{
+    color:goldenrod;
+    height: 5vh;
+}
+.social .inst{
+    font-weight: 800;
+    color: goldenrod;
+    height: 5vh;
+}
+.social .twit{
+    color:goldenrod;
+    height:5vh;
+}
